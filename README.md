@@ -21,8 +21,6 @@ require("lazy").setup({
     "tlucanti/git-permalink.nvim",
     opts = {
       remote_name = "origin",
-    },
-    keys = {
       lhs = "<C-l>",
       mode = "n",
     }

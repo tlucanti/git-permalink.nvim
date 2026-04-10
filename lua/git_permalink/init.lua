@@ -144,13 +144,10 @@ function M.setup(user_cfg)
   user_cfg = user_cfg or {}
   M._cfg = vim.tbl_extend("force", {}, default_cfg, user_cfg)
 
-  -- Register the mapping – you can *also* let lazy.nvim do this via `keys`.
-  local lhs  = M._cfg.lhs  or "<C-l>"
-  local mode = M._cfg.mode or "n"
-  local desc = M._cfg.desc or "Copy Git line‑permalink to clipboard"
-
-  vim.keymap.set(mode, lhs, M.copy_permalink,
-                 { noremap = true, silent = true, desc = desc })
+  vim.keymap.set(M._cfg.mode,
+                 M._cfg.lhs,
+                 M.copy_permalink,
+                 { noremap = true, silent = true, desc = M._cfg.desc })
 end
 
 return M
