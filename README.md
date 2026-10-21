@@ -1,6 +1,10 @@
 # git-permalink.nvim
 
-Create a **per‑line permalink** for the current file on GitHub, GitLab or Bitbucket and copy it to the system clipboard.
+Create a **permalink** for the **current line in file** on GitHub, GitLab or Bitbucket and copy it to the system clipboard.
+
+![image](readme.png)
+
+Get a link at the bottom status bar in one click
 
 ## Features
 
